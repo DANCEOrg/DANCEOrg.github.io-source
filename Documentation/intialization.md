@@ -11,15 +11,17 @@
 
 5. Launching Site with GH-Pages
 
-## Installing Jeykll
+## 1. Installing Jeykll
 
 ### How to get Jekyll
 
-Note: In this tutorial, sudo apt was used rather than other utilities such as cat. This turorial was performed on Ubuntu 18.04 and works for 20.04
+*Note: In this tutorial, sudo apt was used rather than other utilities such as cat. This turorial was performed on Ubuntu 18.04 and works for 20.04*
 
 Jekyll is a static site generator that is used for the iris-hep website; this is the website which DANCEOrg is modeling after. 
 
 The Jekyll [website](https://jekyllrb.com/) is an excellent resource for the installation process. Most of the commands used are from the site. 
+
+### Pre-Reqs
 
 Before installing Jekyll, there is a critacal prerequisite called Ruby. 
 
@@ -44,6 +46,18 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 rbenv install 2.7.2
 rbenv global 2.7.2
 ```
-After cloning and the rbenv installations, close and restart your shell. 
+After cloning the rbenv installations, close and restart your shell. 
 
 Run command: `ruby -v` and it will return 2.7.2
+
+Now bundler can be install with: 
+
+```
+gem install bundler
+rbenv rehash
+```
+## 3. Building the Website Repository
+
+### Running the Website locally
+
+
