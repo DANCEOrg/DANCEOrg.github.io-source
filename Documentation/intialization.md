@@ -27,7 +27,9 @@ Before installing Jekyll, there is a critacal prerequisite called Ruby.
 
 Run command: `ruby -v` to see if ruby is already installed
 
-If not installed run here are the instructions. 
+If not installed here are the separate instructions for LTS 18.04 and 20.04. Both will install Ruby using Rbenv
+
+#### For LTS 18.04:
 
 Optional: sync your WSL clock with: `sudo hwclock -s`
 
@@ -50,6 +52,51 @@ After cloning the rbenv installations, close and restart your shell.
 
 Run command: `ruby -v` and it will return 2.7.2
 
+#### For LTS 20.04:
+*Instructions for installation on 20.04 are from https://linuxize.com/post/how-to-install-ruby-on-ubuntu-20-04/*
+
+First, update the `apt-get` utility with: `sudo apt-get update`
+
+Install required libraries and compilers:
+
+```
+sudo apt install git curl autoconf bison build-essential \
+    libssl-dev libyaml-dev libreadline6-dev zlib1g-dev \
+    libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
+```
+
+Install the rbenv tool using `curl`:`curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash`
+
+To start using rbenv, add `$HOME/.rbenv/bin` to your `PATH` with Bash or Zsh: 
+
+For Bash:
+
+```
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+For Zsh:
+
+```
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Run: `rbenv -v` to confirm and it should return: `rbenv 1.1.2-30-gc879cb0` 
+
+Now, install 2.7.1: 
+
+```
+rbenv install 2.7.1
+rbenv global 2.7.1
+```
+Run command: `ruby -v` and it will return 2.7.2
+
+
+#### Bundler Install 
 Now bundler can be install with: 
 
 ```
