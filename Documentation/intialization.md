@@ -15,7 +15,7 @@
 
 ### How to get Jekyll
 
-*Note: In this tutorial, sudo apt was used rather than other utilities such as cat. This turorial was performed on Ubuntu 18.04 and works for 20.04*
+*Note: In this tutorial, sudo apt was used rather than other utilities such as cat. This turorial was performed on Ubuntu 18.04 and 20.04*
 
 Jekyll is a static site generator that is used for the iris-hep website; this is the website which DANCEOrg is modeling after. 
 
@@ -37,7 +37,7 @@ First, update the `apt-get` utility with: `sudo apt-get update`
 
 Install system dependencies: `sudo apt-get install openssl libssl-dev zlib1g zlib1g-dev`
 
-The following instructions are from the techiediaries [website](https://www.techiediaries.com/install-ruby-2-7-rails-6-ubuntu-20-04/):
+*The following instructions are from the techiediaries [website](https://www.techiediaries.com/install-ruby-2-7-rails-6-ubuntu-20-04/):*
   
 ```
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -53,7 +53,7 @@ After cloning the rbenv installations, close and restart your shell.
 Run command: `ruby -v` and it will return 2.7.2
 
 #### For LTS 20.04:
-*Instructions for installation on 20.04 are from https://linuxize.com/post/how-to-install-ruby-on-ubuntu-20-04/*
+*Instructions for installation on 20.04 are from the [linuxize](https://linuxize.com/post/how-to-install-ruby-on-ubuntu-20-04/) website*
 
 First, update the `apt-get` utility with: `sudo apt-get update`
 
