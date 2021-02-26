@@ -13,8 +13,6 @@
 
 ## 1. Installing Jeykll
 
-### How to get Jekyll
-
 *Note: In this tutorial, sudo apt was used rather than other utilities such as cat. This turorial was performed on Ubuntu 18.04 and 20.04*
 
 Jekyll is a static site generator that is used for the iris-hep website; this is the website which DANCEOrg is modeling after. 
@@ -103,8 +101,14 @@ Now bundler can be install with:
 gem install bundler
 rbenv rehash
 ```
+
+### How to get Jekyll
+
+Now that `gem install bundler` is installed, it can be used to install jekyll with: `gem install bundler jekyll`
+
 ## 3. Building the Website Repository
 
 ### Running the Website locally
+
 
 
