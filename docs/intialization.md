@@ -106,6 +106,11 @@ rbenv rehash
 
 Now that `gem install bundler` is installed, it can be used to install jekyll with: `gem install bundler jekyll`
 
+Once complete, confirm with: `jekyll -v` and it should return: `jekyll 4.2.0`
+
+## 2. Initializing the Source Repository
+
+
 ## 3. Building the Website Repository
 
 ### Running the Website locally
