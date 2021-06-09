@@ -1,17 +1,17 @@
 # Website Setup Documentation
 ## Overview
 
-1. Installing Jeykll
+1. Installing Jeykll on a Local Machine
 
 2. Initializing the Source Repository
 
-3. Building the Website Repository
+3. Building the Website Repository (source)
 
 4. Working with INDICO Space
 
-5. Launching Site with GH-Pages
+5. Launching Site with GH-Pages (https://github.com/iris-hep/iris-hep.github.io-source/blob/master/.github/workflows/ci.yml )
 
-## 1. Installing Jeykll
+## 1. Installing Jeykll on a Local Machine
 
 *Note: In this tutorial, sudo apt was used rather than other utilities such as cat. This turorial was performed on Ubuntu 18.04 and 20.04*
 
@@ -21,11 +21,11 @@ The Jekyll [website](https://jekyllrb.com/) is an excellent resource for the ins
 
 ### Pre-Reqs
 
-Before installing Jekyll, there is a critacal prerequisite called Ruby. 
+Before installing Jekyll, there is a critical prerequisite called Ruby. 
 
 Run command: `ruby -v` to see if ruby is already installed
 
-If not installed here are the separate instructions for LTS 18.04 and 20.04. Both will install Ruby using Rbenv
+If Ruby is not installed, here are the separate instructions for LTS 18.04 and 20.04. Both will install Ruby using Rbenv
 
 #### For LTS 18.04:
 
@@ -95,7 +95,7 @@ Run command: `ruby -v` and it will return 2.7.2
 
 
 #### Bundler Install 
-Now bundler can be install with: 
+Now bundler can be installed with: 
 
 ```
 gem install bundler
@@ -108,12 +108,35 @@ Now that `gem install bundler` is installed, it can be used to install jekyll wi
 
 Once complete, confirm with: `jekyll -v` and it should return: `jekyll 4.2.0`
 
+
 ## 2. Initializing the Source Repository
 
+### Cloning the DANCEOrg Repo 
+https://github.com/DANCEOrg/DANCEOrg.github.io-source was created to hold and host the DANCEOrg website. `cd` to a desired location and run: `git clone https://github.com/DANCEOrg/DANCEOrg.github.io-source` 
+This will clone the DANCEOrg repository to a local location that will allow you to update and contribute to the site. Cloners may be asked for credentials. Login with the GitHub account associated with DANCEOrg. 
 
-## 3. Building the Website Repository
+### Using Jekyll to start a site 
+**this is here for educaational purposes, please do not recreate a website for DANCEOrg**
+**(drop link to coding academy and write out instruction for how to generate minimal-mistake theme on the DANCEOrg git-repo)**
+
+Now that Jekyll is available, a directory for the site can be formed and turned into a git repository. `cd` to a desired save location in your terminal and run: `jekyll new {name of site}`
 
 ### Running the Website locally
+
+Creating the site will automatically structure a simple site which can then be ran locally. Run: `bundle exec jekyll serve` to serve the local site. 
+
+The configuration file (.yml file), source, and destination will be set and a local site will be generated. The server address will be listed. Copy and paste the site in your browser or ctrl+click the link. This should present a site. 
+
+### Adopting Minimal-Mistakes (educational)
+The minimal mistakes theme was used for the DANCEOrg site. 
+
+
+
+--------
+### 
+In a source-code editor, like Visual Studio Code, open the site folder. THe site folder will be located 
+
+## 3. Building the Website Repository
 
 
 
