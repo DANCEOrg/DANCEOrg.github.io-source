@@ -128,7 +128,7 @@ Creating the site will automatically structure a simple site which can then be r
 The configuration file (.yml file), source, and destination will be set and a local site will be generated. The server address will be listed. Copy and paste the site in your browser or ctrl+click the link. This should present a site. 
 
 ### Adopting Minimal-Mistakes (educational)
-The minimal mistakes theme was used for the DANCEOrg site. 
+The minimal mistakes theme was used for the DANCEOrg site. Documentation on how the gem-based method was implemated can be found:[here](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
 
 
