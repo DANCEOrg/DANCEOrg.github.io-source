@@ -5,6 +5,6 @@ Source repo for DanceOrg website
 ```
 gem install bundler
 bundle install
-bundle exec rake serve
+bundle exec jekyll serve
 ``` 
 ---
