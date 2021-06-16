@@ -1,5 +1,5 @@
 # DANCEOrg.github.io-source
-Source repo for DanceOrg website
+Source repo for DANCEOrg website
 
 ## Test Locally (Tentative)
 ```
